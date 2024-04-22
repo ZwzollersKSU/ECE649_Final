@@ -63,26 +63,54 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="RESET"/>
     </comp>
+    <comp lib="1" loc="(1260,370)" name="NOT Gate">
+      <a name="facing" val="south"/>
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="2" loc="(1280,400)" name="Multiplexer">
+      <a name="selloc" val="tr"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp loc="(1220,400)" name="Registers"/>
     <comp loc="(1550,390)" name="ALU"/>
     <comp loc="(800,410)" name="Program_Memory"/>
     <wire from="(1000,470)" to="(1000,530)"/>
     <wire from="(1000,530)" to="(1330,530)"/>
+    <wire from="(1220,350)" to="(1220,390)"/>
+    <wire from="(1220,390)" to="(1250,390)"/>
+    <wire from="(1220,410)" to="(1250,410)"/>
+    <wire from="(1220,430)" to="(1330,430)"/>
+    <wire from="(1260,340)" to="(1260,350)"/>
+    <wire from="(1260,370)" to="(1260,380)"/>
+    <wire from="(1280,400)" to="(1300,400)"/>
+    <wire from="(1300,400)" to="(1300,410)"/>
+    <wire from="(1300,410)" to="(1330,410)"/>
     <wire from="(1320,450)" to="(1320,510)"/>
     <wire from="(1320,450)" to="(1330,450)"/>
     <wire from="(1320,510)" to="(1540,510)"/>
+    <wire from="(1330,330)" to="(1330,390)"/>
     <wire from="(1330,470)" to="(1330,530)"/>
     <wire from="(1330,530)" to="(1540,530)"/>
     <wire from="(1550,390)" to="(1560,390)"/>
-    <wire from="(1560,340)" to="(1560,390)"/>
+    <wire from="(1550,410)" to="(1570,410)"/>
+    <wire from="(1560,320)" to="(1560,390)"/>
+    <wire from="(1570,310)" to="(1570,410)"/>
+    <wire from="(540,310)" to="(1570,310)"/>
+    <wire from="(540,310)" to="(540,360)"/>
     <wire from="(560,510)" to="(570,510)"/>
     <wire from="(570,450)" to="(570,510)"/>
     <wire from="(570,450)" to="(580,450)"/>
     <wire from="(570,510)" to="(990,510)"/>
     <wire from="(580,470)" to="(580,530)"/>
     <wire from="(580,530)" to="(1000,530)"/>
-    <wire from="(980,340)" to="(1560,340)"/>
-    <wire from="(980,340)" to="(980,410)"/>
+    <wire from="(910,330)" to="(1330,330)"/>
+    <wire from="(910,340)" to="(1260,340)"/>
+    <wire from="(910,350)" to="(1220,350)"/>
+    <wire from="(910,370)" to="(1000,370)"/>
+    <wire from="(910,390)" to="(1000,390)"/>
+    <wire from="(910,430)" to="(1000,430)"/>
+    <wire from="(980,320)" to="(1560,320)"/>
+    <wire from="(980,320)" to="(980,410)"/>
     <wire from="(980,410)" to="(1000,410)"/>
     <wire from="(990,450)" to="(1000,450)"/>
     <wire from="(990,450)" to="(990,510)"/>
@@ -1019,6 +1047,12 @@
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
+    <comp lib="1" loc="(400,460)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(430,480)" name="OR Gate">
+      <a name="size" val="30"/>
+    </comp>
     <comp lib="2" loc="(500,370)" name="Multiplexer">
       <a name="width" val="8"/>
     </comp>
@@ -1033,17 +1067,26 @@
       <a name="dataWidth" val="32"/>
       <a name="label" val="PROM"/>
       <a name="labelvisible" val="true"/>
+      <a name="trigger" val="falling"/>
     </comp>
     <wire from="(340,440)" to="(460,440)"/>
-    <wire from="(340,460)" to="(480,460)"/>
-    <wire from="(340,480)" to="(440,480)"/>
-    <wire from="(340,500)" to="(470,500)"/>
+    <wire from="(340,460)" to="(370,460)"/>
+    <wire from="(340,480)" to="(400,480)"/>
+    <wire from="(340,500)" to="(370,500)"/>
+    <wire from="(370,450)" to="(370,460)"/>
+    <wire from="(370,470)" to="(370,500)"/>
+    <wire from="(370,500)" to="(400,500)"/>
     <wire from="(390,330)" to="(390,430)"/>
     <wire from="(390,330)" to="(510,330)"/>
     <wire from="(390,430)" to="(440,430)"/>
+    <wire from="(400,460)" to="(480,460)"/>
+    <wire from="(400,470)" to="(400,480)"/>
+    <wire from="(400,490)" to="(400,500)"/>
+    <wire from="(400,500)" to="(470,500)"/>
     <wire from="(410,370)" to="(410,400)"/>
     <wire from="(410,370)" to="(420,370)"/>
     <wire from="(410,400)" to="(500,400)"/>
+    <wire from="(430,480)" to="(440,480)"/>
     <wire from="(440,320)" to="(440,340)"/>
     <wire from="(440,470)" to="(440,480)"/>
     <wire from="(440,480)" to="(530,480)"/>
