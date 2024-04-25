@@ -1,0 +1,26 @@
+Info for ECE 649 Final Project:
+
+Extra Credit
+- Add support for 32 registers for addi/add/sub/lw/sw (15 pts)
+- R-Type: and, or, xor (5 pts each, 15 pts)
+- 3 stage pipline (25 pts)
+- Data hazard enhancement support (50 pts)?
+- - Only happen in piplined systems
+- - 
+
+Modules:
+
+Program Memory
+- To-do:
+-  - Change pc to add 
+
+Registers
+-
+
+ALU
+-
+
+Main: 
+- Things Zane has defined:
+- - PLA
+- - - 
