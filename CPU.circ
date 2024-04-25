@@ -56,10 +56,10 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(370,510)" name="Clock">
+    <comp lib="0" loc="(350,510)" name="Clock">
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(390,530)" name="Pin">
+    <comp lib="0" loc="(370,530)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="RESET"/>
     </comp>
@@ -176,7 +176,7 @@
       <a name="in_width" val="17"/>
       <a name="out_width" val="4"/>
       <a name="table">00000000000110011 0001 # ADD
-xxxxxxx0000010010 1001 # ADDI
+xxxxxxx0000010011 1001 # ADDI
 </a>
     </comp>
     <comp lib="2" loc="(1280,400)" name="Multiplexer">
@@ -185,7 +185,7 @@ xxxxxxx0000010010 1001 # ADDI
     </comp>
     <comp loc="(1220,400)" name="Registers"/>
     <comp loc="(1550,390)" name="ALU"/>
-    <comp loc="(610,410)" name="Program_Memory"/>
+    <comp loc="(590,410)" name="Program_Memory"/>
     <wire from="(1000,470)" to="(1000,530)"/>
     <wire from="(1000,530)" to="(1540,530)"/>
     <wire from="(1220,350)" to="(1220,390)"/>
@@ -204,12 +204,13 @@ xxxxxxx0000010010 1001 # ADDI
     <wire from="(1570,310)" to="(1570,410)"/>
     <wire from="(350,310)" to="(1570,310)"/>
     <wire from="(350,310)" to="(350,360)"/>
-    <wire from="(370,510)" to="(380,510)"/>
-    <wire from="(380,450)" to="(380,510)"/>
-    <wire from="(380,450)" to="(390,450)"/>
-    <wire from="(380,510)" to="(990,510)"/>
-    <wire from="(390,470)" to="(390,530)"/>
-    <wire from="(390,530)" to="(1000,530)"/>
+    <wire from="(350,510)" to="(360,510)"/>
+    <wire from="(360,450)" to="(360,510)"/>
+    <wire from="(360,450)" to="(370,450)"/>
+    <wire from="(360,510)" to="(980,510)"/>
+    <wire from="(370,470)" to="(370,530)"/>
+    <wire from="(370,530)" to="(1000,530)"/>
+    <wire from="(590,410)" to="(610,410)"/>
     <wire from="(620,410)" to="(620,470)"/>
     <wire from="(620,410)" to="(680,410)"/>
     <wire from="(620,470)" to="(660,470)"/>
@@ -248,9 +249,9 @@ xxxxxxx0000010010 1001 # ADDI
     <wire from="(980,320)" to="(1560,320)"/>
     <wire from="(980,320)" to="(980,410)"/>
     <wire from="(980,410)" to="(1000,410)"/>
-    <wire from="(990,450)" to="(1000,450)"/>
-    <wire from="(990,450)" to="(990,510)"/>
-    <wire from="(990,510)" to="(1540,510)"/>
+    <wire from="(980,450)" to="(1000,450)"/>
+    <wire from="(980,450)" to="(980,510)"/>
+    <wire from="(980,510)" to="(1540,510)"/>
   </circuit>
   <circuit name="Registers">
     <a name="appearance" val="custom"/>
@@ -1119,14 +1120,8 @@ xxxxxxx0000010010 1001 # ADDI
       <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="1" loc="(400,460)" name="OR Gate">
+    <comp lib="1" loc="(520,490)" name="OR Gate">
       <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(430,480)" name="OR Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="2" loc="(500,370)" name="Multiplexer">
-      <a name="width" val="8"/>
     </comp>
     <comp lib="3" loc="(460,360)" name="Adder"/>
     <comp lib="4" loc="(440,400)" name="Register">
@@ -1141,42 +1136,36 @@ xxxxxxx0000010010 1001 # ADDI
       <a name="labelvisible" val="true"/>
       <a name="trigger" val="falling"/>
     </comp>
-    <wire from="(340,440)" to="(460,440)"/>
-    <wire from="(340,460)" to="(370,460)"/>
-    <wire from="(340,480)" to="(400,480)"/>
-    <wire from="(340,500)" to="(370,500)"/>
-    <wire from="(370,450)" to="(370,460)"/>
-    <wire from="(370,470)" to="(370,500)"/>
-    <wire from="(370,500)" to="(400,500)"/>
-    <wire from="(390,330)" to="(390,430)"/>
-    <wire from="(390,330)" to="(510,330)"/>
+    <wire from="(340,480)" to="(440,480)"/>
+    <wire from="(340,500)" to="(470,500)"/>
+    <wire from="(390,300)" to="(390,430)"/>
+    <wire from="(390,300)" to="(470,300)"/>
     <wire from="(390,430)" to="(440,430)"/>
-    <wire from="(400,460)" to="(480,460)"/>
-    <wire from="(400,470)" to="(400,480)"/>
-    <wire from="(400,490)" to="(400,500)"/>
-    <wire from="(400,500)" to="(470,500)"/>
     <wire from="(410,370)" to="(410,400)"/>
     <wire from="(410,370)" to="(420,370)"/>
     <wire from="(410,400)" to="(500,400)"/>
-    <wire from="(430,480)" to="(440,480)"/>
     <wire from="(440,320)" to="(440,340)"/>
     <wire from="(440,470)" to="(440,480)"/>
-    <wire from="(440,480)" to="(530,480)"/>
+    <wire from="(440,480)" to="(490,480)"/>
     <wire from="(460,360)" to="(470,360)"/>
-    <wire from="(460,380)" to="(460,440)"/>
-    <wire from="(460,380)" to="(470,380)"/>
+    <wire from="(470,300)" to="(470,360)"/>
     <wire from="(470,490)" to="(470,500)"/>
-    <wire from="(480,390)" to="(480,460)"/>
-    <wire from="(500,370)" to="(510,370)"/>
+    <wire from="(470,500)" to="(490,500)"/>
+    <wire from="(500,330)" to="(500,400)"/>
+    <wire from="(500,330)" to="(540,330)"/>
     <wire from="(500,400)" to="(500,430)"/>
-    <wire from="(510,330)" to="(510,370)"/>
-    <wire from="(510,330)" to="(540,330)"/>
+    <wire from="(520,390)" to="(520,490)"/>
+    <wire from="(520,390)" to="(540,390)"/>
     <wire from="(530,370)" to="(540,370)"/>
     <wire from="(530,380)" to="(540,380)"/>
-    <wire from="(530,390)" to="(530,480)"/>
-    <wire from="(530,390)" to="(540,390)"/>
     <wire from="(780,410)" to="(790,410)"/>
     <wire from="(790,410)" to="(790,440)"/>
     <wire from="(790,440)" to="(800,440)"/>
+  </circuit>
+  <circuit name="Decode">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Decode"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
   </circuit>
 </project>
