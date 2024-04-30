@@ -58,7 +58,7 @@
     <a name="appearance" val="custom"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="512.0"/>
+    <a name="simulationFrequency" val="1000.0"/>
     <comp lib="0" loc="(1550,420)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="none"/>
@@ -547,8 +547,6 @@
       <a name="matrixrows" val="16"/>
       <a name="offcolor" val="#000000"/>
     </comp>
-    <comp lib="5" loc="(1810,150)" name="7-Segment Display"/>
-    <comp lib="5" loc="(1910,150)" name="7-Segment Display"/>
     <comp loc="(1220,390)" name="Registers"/>
     <comp loc="(1500,430)" name="ALU"/>
     <comp loc="(1790,390)" name="Data_Memory"/>
@@ -1936,6 +1934,20 @@
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(580,440)" name="Splitter">
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="none"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="none"/>
+      <a name="facing" val="north"/>
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="9"/>
+    </comp>
+    <comp lib="0" loc="(580,440)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="none"/>
       <a name="bit1" val="none"/>
@@ -1947,20 +1959,6 @@
       <a name="bit7" val="none"/>
       <a name="bit8" val="none"/>
       <a name="facing" val="south"/>
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="9"/>
-    </comp>
-    <comp lib="0" loc="(580,440)" name="Splitter">
-      <a name="bit0" val="none"/>
-      <a name="bit1" val="none"/>
-      <a name="bit2" val="none"/>
-      <a name="bit3" val="none"/>
-      <a name="bit4" val="none"/>
-      <a name="bit5" val="none"/>
-      <a name="bit6" val="none"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="none"/>
-      <a name="facing" val="north"/>
       <a name="fanout" val="1"/>
       <a name="incoming" val="9"/>
     </comp>

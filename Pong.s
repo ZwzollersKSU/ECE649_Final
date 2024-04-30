@@ -5,18 +5,30 @@ start:
     li x4 2
     li x5 1
     li x6 15
-    li x7 60
+    li x7 56
+    li x14 4
+    li x15 60
     
     li x9 7
     li x10 7
     li x11 7
     li x12 12
 loop:
+    beq x2 x0 dead
+    beq x2 x15 dead
     bne x2 x7 nRight
+    sll x24 x3 x1
+    sll x25 x11 x9
+    and x24 x24 x25
+    beq x24 x0 nRight
     li x4 -2
     beq x0 x0 nLeft
 nRight:
-    bne x2 x0 nLeft
+    bne x2 x14 nLeft
+    sll x24 x3 x1
+    sll x25 x10 x9
+    and x24 x24 x25
+    beq x24 x0 nLeft
     li x4 2
 nLeft:
     bne x3 x6 nUp
@@ -30,7 +42,6 @@ move:
     lw x17 64(x0)
     sw x1 68(x0)
     sw x0 68(x0)
-    
     and x13 x17 x1
     bne x13 x1 p2nUp
     addi x11 x11 1
@@ -60,4 +71,6 @@ p1nDown:
     sw x18 0(x0)
     sw x19 60(x0)
     beq x0 x0 loop
+dead:
+    nop
     
