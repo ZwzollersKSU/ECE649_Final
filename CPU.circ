@@ -58,7 +58,7 @@
     <a name="appearance" val="custom"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="1000.0"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1550,420)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="none"/>
@@ -477,6 +477,10 @@
       <a name="fanout" val="6"/>
       <a name="incoming" val="9"/>
     </comp>
+    <comp lib="1" loc="(1000,280)" name="XNOR Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+    </comp>
     <comp lib="1" loc="(1250,370)" name="NOT Gate">
       <a name="facing" val="south"/>
       <a name="size" val="20"/>
@@ -500,10 +504,6 @@
       <a name="size" val="20"/>
     </comp>
     <comp lib="1" loc="(920,290)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(990,260)" name="XNOR Gate">
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
@@ -552,7 +552,7 @@
     <comp loc="(1790,390)" name="Data_Memory"/>
     <comp loc="(740,450)" name="Program_Memory"/>
     <comp loc="(980,390)" name="Decode"/>
-    <wire from="(1000,290)" to="(1060,290)"/>
+    <wire from="(1000,290)" to="(1050,290)"/>
     <wire from="(1000,310)" to="(1540,310)"/>
     <wire from="(1000,320)" to="(1530,320)"/>
     <wire from="(1000,330)" to="(1280,330)"/>
@@ -561,11 +561,9 @@
     <wire from="(1000,380)" to="(1410,380)"/>
     <wire from="(1020,510)" to="(1020,520)"/>
     <wire from="(1020,520)" to="(1590,520)"/>
-    <wire from="(1040,250)" to="(1520,250)"/>
-    <wire from="(1040,270)" to="(1060,270)"/>
+    <wire from="(1050,270)" to="(1520,270)"/>
     <wire from="(1050,510)" to="(1050,540)"/>
     <wire from="(1050,540)" to="(1620,540)"/>
-    <wire from="(1060,270)" to="(1060,290)"/>
     <wire from="(1220,410)" to="(1220,430)"/>
     <wire from="(1220,430)" to="(1240,430)"/>
     <wire from="(1220,450)" to="(1230,450)"/>
@@ -589,7 +587,7 @@
     <wire from="(1510,340)" to="(1540,340)"/>
     <wire from="(1510,390)" to="(1510,430)"/>
     <wire from="(1510,430)" to="(1550,430)"/>
-    <wire from="(1520,250)" to="(1520,450)"/>
+    <wire from="(1520,270)" to="(1520,450)"/>
     <wire from="(1530,320)" to="(1530,360)"/>
     <wire from="(1530,360)" to="(1530,470)"/>
     <wire from="(1530,470)" to="(1570,470)"/>
@@ -695,10 +693,8 @@
     <wire from="(780,520)" to="(1020,520)"/>
     <wire from="(810,510)" to="(810,540)"/>
     <wire from="(810,540)" to="(1050,540)"/>
-    <wire from="(950,280)" to="(970,280)"/>
+    <wire from="(950,280)" to="(1000,280)"/>
     <wire from="(950,300)" to="(1000,300)"/>
-    <wire from="(970,260)" to="(970,280)"/>
-    <wire from="(970,260)" to="(990,260)"/>
     <wire from="(980,350)" to="(980,390)"/>
     <wire from="(980,410)" to="(1220,410)"/>
     <wire from="(980,430)" to="(1000,430)"/>
@@ -1934,20 +1930,6 @@
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(580,440)" name="Splitter">
-      <a name="bit0" val="none"/>
-      <a name="bit1" val="none"/>
-      <a name="bit2" val="none"/>
-      <a name="bit3" val="none"/>
-      <a name="bit4" val="none"/>
-      <a name="bit5" val="none"/>
-      <a name="bit6" val="none"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="none"/>
-      <a name="facing" val="north"/>
-      <a name="fanout" val="1"/>
-      <a name="incoming" val="9"/>
-    </comp>
-    <comp lib="0" loc="(580,440)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="bit0" val="none"/>
       <a name="bit1" val="none"/>
@@ -1959,6 +1941,20 @@
       <a name="bit7" val="none"/>
       <a name="bit8" val="none"/>
       <a name="facing" val="south"/>
+      <a name="fanout" val="1"/>
+      <a name="incoming" val="9"/>
+    </comp>
+    <comp lib="0" loc="(580,440)" name="Splitter">
+      <a name="bit0" val="none"/>
+      <a name="bit1" val="none"/>
+      <a name="bit2" val="none"/>
+      <a name="bit3" val="none"/>
+      <a name="bit4" val="none"/>
+      <a name="bit5" val="none"/>
+      <a name="bit6" val="none"/>
+      <a name="bit7" val="0"/>
+      <a name="bit8" val="none"/>
+      <a name="facing" val="north"/>
       <a name="fanout" val="1"/>
       <a name="incoming" val="9"/>
     </comp>
